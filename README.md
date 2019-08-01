@@ -93,11 +93,19 @@ const tomanFormat = amount.farsiFormatToman({ badge: "ریال" }); // returns �
 #### add your language
 
 1 - create a folder named YOUR-LANGUGE inside the numberToString folder
+
 2 - look the persian folder inside the numberToString folder
+
 3 - fill your folder like that 
+
 4 - edit and add your files to index.js inside the numberToString folder
+
 ---------------
+
 5 - create a js file named YOUR-LANGUGE inside the functions/util folder
+
 6 - edit and add your files to index.js inside the functions/util folder
+
 ---------------
+
 7 - pull request
