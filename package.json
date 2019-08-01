@@ -1,7 +1,7 @@
 {
   "name": "@farad845/number-to-text",
-  "version": "1.0.0",
-  "description": "enables you to create formal Farsi spoken format for numbers that represent an amount",
+  "version": "1.0.1",
+  "description": "enables you to create formalspoken format for numbers that represent an amount",
   "main": "lib.js",
   "scripts": {
     "test": "jest"
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaRzad-845/iramount.git"
+    "url": "git+https://github.com/FaRzad-845/numberToText.git"
   },
   "author": {
     "name": "farzadshami",
