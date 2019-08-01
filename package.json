@@ -1,6 +1,6 @@
 {
-  "name": "iramount",
-  "version": "1.2.1",
+  "name": "number-to-text",
+  "version": "1.0.0",
   "description": "enables you to create formal Farsi spoken format for numbers that represent an amount",
   "main": "lib.js",
   "scripts": {
