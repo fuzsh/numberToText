@@ -14,6 +14,13 @@ module.exports = lauguage => {
         hundredMultiples: require("./azari/hundredMultiples"),
         thousandMultiples: require("./azari/thousandMultiples")
       };
+    case "tr":
+      return {
+        oneToTwenty: require("./turkish/oneToTwenty"),
+        tenMultiples: require("./turkish/tenMultiples"),
+        hundredMultiples: require("./turkish/hundredMultiples"),
+        thousandMultiples: require("./turkish/thousandMultiples")
+      };
     default:
       return {
         oneToTwenty: require("./persian/oneToTwenty"),

@@ -4,6 +4,8 @@ module.exports = lauguage => {
       return (persianNumbers = require("./Persian"));
     case "azari":
       return (azariNumbers = require("./Azari"));
+    case "tr":
+      return (turkishNumbers = require("./Turkish"));
     case "s-ch":
       return (simpleChinese = require("./simpleChinese"));
     default:

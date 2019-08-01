@@ -4,6 +4,8 @@ module.exports = lauguage => {
       return " و ";
     case "azari":
       return " ";
+    case "tr":
+      return " ";
     default:
       return " ";
   }

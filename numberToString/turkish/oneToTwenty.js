@@ -1,0 +1,23 @@
+module.exports = oneToTwenty = [
+  "",
+  "bir",
+  "iki",
+  "üç",
+  "dört",
+  "beş",
+  "altı",
+  "yedi",
+  "sekiz",
+  "dokuz",
+  "on",
+  "on bir",
+  "on iki",
+  "on üç",
+  "on dört",
+  "on beş",
+  "on altı",
+  "on yedi",
+  "on sekiz",
+  "on dokuz",
+  "yirmi"
+];
