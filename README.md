@@ -5,16 +5,16 @@ This NodeJs library enables you to create spoken format for numbers that represe
 using npm :
 
 ```javascript
-$ npm install number-to-text --save
+$ npm i @farad845/number-to-text --save
 ```
 ## Usage
 
 ```javascript
-const Amount = require("iramount"); 
-const amount = new irAmount(10239876); 
+const Amount = require("@farad845/number-to-text"); 
+const amount = new Amount(10239876); 
 // defualt language set to "EN"
 // you can change it by passing as second parameter like this :
-const amountWithCountry = new irAmount(10239876, "Fa"); 
+const amountWithCountry = new Amount(10239876, "Fa"); 
 ```
 
 ### Grouping Digits

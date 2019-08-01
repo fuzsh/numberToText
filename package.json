@@ -1,5 +1,5 @@
 {
-  "name": "number-to-text",
+  "name": "@farad845/number-to-text",
   "version": "1.0.0",
   "description": "enables you to create formal Farsi spoken format for numbers that represent an amount",
   "main": "lib.js",
