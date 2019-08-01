@@ -1,0 +1,30 @@
+{
+  "name": "iramount",
+  "version": "1.2.1",
+  "description": "enables you to create formal Farsi spoken format for numbers that represent an amount",
+  "main": "lib.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "node.js",
+    "persian",
+    "persian Number",
+    "Number to String"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaRzad-845/iramount.git"
+  },
+  "author": {
+    "name": "farzadshami",
+    "url": "https://github.com/FaRzad-845"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FaRzad-845/iramount/issues"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
