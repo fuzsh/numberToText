@@ -94,7 +94,7 @@ const tomanFormat = amount.farsiFormatToman({ badge: "ریال" }); // returns �
 
 1 - create a folder named YOUR-LANGUGE inside the numberToString folder
 
-2 - look the persian folder inside the numberToString folder
+2 - look at the persian folder, inside the numberToString folder
 
 3 - fill your folder like that 
 
