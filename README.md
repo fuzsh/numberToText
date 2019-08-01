@@ -1,68 +1,91 @@
-# number to persian text converter
-This NodeJs library enables you to create formal Farsi spoken format for numbers that represent an amount in Rials (IRR).
+# number to text converter
+This NodeJs library enables you to create spoken format for numbers that represent an amount in countries currency .
 
 ## install
 using npm :
 
 ```javascript
-$ npm install iramount --save
+$ npm install number-to-text --save
 ```
 ## Usage
 
 ```javascript
-const irAmount = require("iramount"); 
-const amount = new irAmount(10239876); // constructor just accepts number 
+const Amount = require("iramount"); 
+const amount = new irAmount(10239876); 
+// defualt language set to "EN"
+// you can change it by passing as second parameter like this :
+const amountWithCountry = new irAmount(10239876, "Fa"); 
 ```
 
 ### Grouping Digits
 To group digits by three, use
 ```javascript
+// The settings are optional, 
+// you can pass it as object
 const withDigitGrouping = amount.digitGrouped(); // returns 10,239,876
 ```
-params : 
-
+#### options  
 <ul>
   <li>
-   formatType | default = "R" | R = Rial and T = Toman
+   amount 
   </li>
   <li>
-   language | default = "EN" | EN = English and Fa = Farsi
+   groupDigitBy || default value set to 3, means divide number three digit, three digit
   </li>
   <li>
-   groupDigitBy | default = 3
+   numbersInEnglishCharcters || defult value set to false, it means your number is shown as entered Country if you want to show in english charchers set it to true
   </li>
   <li>
-   amount | constructor value
+   decimalCount || defult value set to 0, it means if yor number is float it rounds up your number and show that without any decimals, if you want to see number with decimal, set the decimal count
+  </li>
+  <li>
+   comma || defult value set to ",", it means you get numbers like this 12,555
   </li>
 </ul>
 
 for Ex :
 
 ```javascript
-const withDigitGrouping = amount.digitGrouped("R", "Fa"); // returns ۱۰,۲۳۹,۸۷۶
+// language = "FA"
+const withDigitGrouping = amount.digitGrouped({ comma : "،" }); // returns ۱۰،۲۳۹،۸۷۶
+const withDigitGrouping = amount.digitGrouped({ numbersInEnglishCharcters : true }); // returns 10,239,876
 ```
 or 
 ```javascript
-const withDigitGrouping = amount.digitGrouped("T", "Fa", 2); // returns ۱,۰۲,۳۹,۸۷.۶
+const withDigitGrouping = amount.digitGrouped({ groupDigitBy: 2 }); // returns 10,23,98,76
 ```
 
 ### Convert To Text
 
-To display Farsi spoken format in Rials (IRR), use
+To display spoken format, use
 ```javascript
-const rialFormat = amount.farsiFormatRial(); // returns ده میلیون و دویست و سی و نه هزار و هشتصد و هفتاد و شش ریال
-```
-To display Farsi spoken format in Tomans (Toman), use
-```javascript
-const tomanFormat = amount.farsiFormatToman(); // returns یک میلیون و بیست و سه هزار و نهصد و هشتاد و هفت تومان
-const tomanFormat = amount.farsiFormatToman(true); // returns یک میلیون و بیست و سه هزار و نهصد و هشتاد و هفت تومان و شش ریال
+/*
+** language = "FA"
+** The settings are optional, 
+** you can pass it as object
+*/
+const textFormat = amount.toText(); // returns ده میلیون و دویست و سی و نه هزار و هشتصد و هفتاد و شش
 ```
 
-## special thanks :
+#### options 
 
 <ul>
   <li>
-    <a href="https://github.com/farhad">@farhad</a>
+   withDecimals || default value is false, if you want to convert float part to text put it to true 
+  </li>
+  <li>
+   badge 
+  </li>
+  <li>
+   secondBadge || it works if you set withDecimals to true
+  </li>
+  <li>
+   seprator || it works if you set withDecimals to true
   </li>
 </ul>
+
+To display spoken format in Rials (IRR), use
+```javascript
+const tomanFormat = amount.farsiFormatToman({ badge: "ریال" }); // returns ده میلیون و دویست و سی و نه هزار و هشتصد و هفتاد و شش ریال
+```
 
