@@ -6,6 +6,12 @@ module.exports = language => {
         twoDigit: require("./germany/twoDigit"),
         threeDigit: require("./germany/threeDigit")
       };
+    case "fr":
+      return {
+        oneDigit: require("./oneDigit"),
+        twoDigit: require("./french/twoDigit"),
+        threeDigit: require("./french/threeDigit")
+      };
     default:
       return {
         oneDigit: require("./oneDigit"),
