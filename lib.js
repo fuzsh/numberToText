@@ -88,10 +88,14 @@ function toTextFormat(options = {}) {
       .map((group, index) => {
         let number = parseInt(group);
         let Rep = "";
-        if (number !== 0 && index !== 0) Rep += this.seprator;
+        if (number !== 0 && index !== 0)
+          Rep += this.language === "de" ? "" : this.seprator;
         Rep += formatFragment(number, this.language, this.seprator);
         if (number !== 0)
-          Rep += ` ${this.thousandMultiples[groups.length - 1 - index]}`;
+          Rep +=
+            this.language === "de"
+              ? this.thousandMultiples[groups.length - 1 - index]
+              : ` ${this.thousandMultiples[groups.length - 1 - index]}`;
         return Rep;
       })
       .join("")

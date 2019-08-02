@@ -6,6 +6,8 @@ module.exports = lauguage => {
       return " ";
     case "tr":
       return " ";
+    case "de":
+      return "und";
     default:
       return " ";
   }

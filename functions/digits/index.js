@@ -3,8 +3,8 @@ module.exports = language => {
     case "de":
       return {
         oneDigit: require("./oneDigit"),
-        twoDigit: require("./twoDigit"),
-        threeDigit: require("./threeDigit")
+        twoDigit: require("./germany/twoDigit"),
+        threeDigit: require("./germany/threeDigit")
       };
     default:
       return {
