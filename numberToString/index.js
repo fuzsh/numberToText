@@ -37,10 +37,10 @@ module.exports = lauguage => {
       };
     default:
       return {
-        oneToTwenty: require("./persian/oneToTwenty"),
-        tenMultiples: require("./persian/tenMultiples"),
-        hundredMultiples: require("./persian/hundredMultiples"),
-        thousandMultiples: require("./persian/thousandMultiples")
+        oneToTwenty: require("./english/oneToTwenty"),
+        tenMultiples: require("./english/tenMultiples"),
+        hundredMultiples: require("./english/hundredMultiples"),
+        thousandMultiples: require("./english/thousandMultiples")
       };
   }
 };
