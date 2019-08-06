@@ -1,6 +1,6 @@
 {
-  "name": "@farad845/number-to-text",
-  "version": "1.0.2",
+  "name": "num-to-txt",
+  "version": "1.0.1",
   "description": "enables you to create formalspoken format for numbers that represent an amount",
   "main": "lib.js",
   "scripts": {

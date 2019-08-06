@@ -5,7 +5,7 @@ This NodeJs library enables you to create spoken format for numbers that represe
 using npm :
 
 ```javascript
-$ npm i @farad845/number-to-text --save
+$ npm i num-to-txt --save
 ```
 ## Usage
 
