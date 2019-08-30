@@ -10,7 +10,7 @@ $ npm i num-to-txt --save
 ## Usage
 
 ```javascript
-const Amount = require("@farad845/number-to-text"); 
+const Amount = require("num-to-txt");
 const amount = new Amount(10239876); 
 // defualt language set to "EN"
 // you can change it by passing as second parameter like this :
